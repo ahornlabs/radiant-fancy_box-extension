@@ -2,9 +2,9 @@
 # require_dependency 'application_controller'
 
 class FancyBoxExtension < Radiant::Extension
-  version "0.1"
-  description "Makes it very easy to use fancybox for displaying images in 'lightbox' style overlays"
-  url "http://github.com/gunn/radiant-fancy_box-extension"
+  version     RadiantFancyBoxExtension::VERSION
+  description RadiantFancyBoxExtension::DESCRIPTION
+  url         RadiantFancyBoxExtension::HOMEPAGE
   
   def activate
     Page.send :include, FancyBoxTags
